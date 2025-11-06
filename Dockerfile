@@ -1,1 +1,1 @@
-FROM docker.io/bitnami/postgresql
+FROM otsugua04/postgresql-base:latest

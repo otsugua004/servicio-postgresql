@@ -9,7 +9,7 @@ storage:
 
 postgresql:
 #  image: registry.redhat.io/rhel8/postgresql-15
-  image: otsugua04/postgresql-base:build-{{ tag }}
+  image: otsugua04/servicio-postgresql:build-{{ tag }}
   database: mi_basedatos
   user: admin
   password: password
