@@ -8,7 +8,8 @@ storage:
   storageClassName: gp3
 
 postgresql:
-  image: registry.redhat.io/rhel8/postgresql-15
+#  image: registry.redhat.io/rhel8/postgresql-15
+  image: otsugua04/postgresql:{{ tag }}
   database: mi_basedatos
   user: admin
   password: password
