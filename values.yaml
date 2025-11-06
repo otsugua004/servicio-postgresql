@@ -1,0 +1,14 @@
+#values.yaml
+replicaCount: 3
+storage:
+  size: 1Gi
+  path: /mnt/data/postgres
+  accessMode: ReadWriteOnce
+  volumeName: postgres-pv
+  storageClassName: gp3
+
+postgresql:
+  image: registry.redhat.io/rhel8/postgresql-15
+  database: mi_basedatos
+  user: admin
+  password: password
