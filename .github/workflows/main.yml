@@ -26,7 +26,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME  }}/hola-mundo-service1
+          images: ${{ secrets.DOCKERHUB_USERNAME  }}/servicio-postgresql
           tags: |
             type=raw,value=build-${{ github.run_number }}
 
@@ -72,4 +72,4 @@ jobs:
         run: |
           oc project otsugua04-dev
           helm show chart oci://registry-1.docker.io/otsugua04/postgresql-chart --version 3
-          helm upgrade --install microservicio-1 oci://registry-1.docker.io/otsugua04/postgresql-chart --version 3 --values values.yaml
+          helm upgrade --install servicio-postgresql oci://registry-1.docker.io/otsugua04/postgresql-chart --version 3 --values values.yaml
