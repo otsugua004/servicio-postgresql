@@ -13,3 +13,4 @@ postgresql:
   database: mi_basedatos
   user: admin
   password: password
+
