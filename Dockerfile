@@ -1,1 +1,1 @@
-FROM otsugua04/postgresql-base:latest
+FROM otsugua04/postgresql-base:1
